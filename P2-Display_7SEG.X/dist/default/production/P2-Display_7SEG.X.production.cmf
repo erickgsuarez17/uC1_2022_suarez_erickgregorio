@@ -1,0 +1,711 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/P2-Display_7SEG.o
+CODE - 0 0 0 3A2 1 1
+code CODE 0 1FF82 1FF82 7E 1 2
+resetVect CODE 0 1FF7E 1FF7E 4 1 2
+udata_acs COMRAM 1 500 500 4 1 1
+config CONFIG 4 300000 300000 23 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 560-36FF 1
+SFR 3A2-4FF 1
+SFR 3700-3FFF 1
+BANK5 560-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 3A2-1FF7D 1
+IDLOC 200000-20003F 1
+SMALLCONST 4000-1FF7D 1
+CODE 3A2-1FF7D 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-EFF 1
+BANK15 F00-FFF 1
+BANK16 1000-10FF 1
+BANK17 1100-11FF 1
+BANK18 1200-12FF 1
+BANK19 1300-13FF 1
+BANK20 1400-14FF 1
+BANK21 1500-15FF 1
+BANK22 1600-16FF 1
+BANK23 1700-17FF 1
+BANK24 1800-18FF 1
+BANK25 1900-19FF 1
+BANK26 1A00-1AFF 1
+BANK27 1B00-1BFF 1
+BANK28 1C00-1CFF 1
+BANK29 1D00-1DFF 1
+BANK30 1E00-1EFF 1
+BANK31 1F00-1FFF 1
+BANK32 2000-20FF 1
+BANK33 2100-21FF 1
+BANK34 2200-22FF 1
+BANK35 2300-23FF 1
+BANK36 2400-24FF 1
+BANK37 2500-25FF 1
+BANK38 2600-26FF 1
+BANK39 2700-27FF 1
+BANK40 2800-28FF 1
+BANK41 2900-29FF 1
+BANK42 2A00-2AFF 1
+BANK43 2B00-2BFF 1
+BANK44 2C00-2CFF 1
+BANK45 2D00-2DFF 1
+BANK46 2E00-2EFF 1
+BANK47 2F00-2FFF 1
+BANK48 3000-30FF 1
+BANK49 3100-31FF 1
+BANK50 3200-32FF 1
+BANK51 3300-33FF 1
+BANK52 3400-34FF 1
+BANK53 3500-35FF 1
+BANK54 3600-36FF 1
+BIGRAM 500-36FF 1
+BIGSFR 3A2-4FF 1
+BIGSFR 3700-3FFF 1
+COMRAM 504-55F 1
+CONFIG 300023-300023 1
+EEDATA 380000-3803FF 1
+MEDIUMCONST 4000-FFFF 1
+MEDIUMCONST 14000-1FF7D 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/P2-Display_7SEG.o
+0 CODE ABS >23:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+4 CODE ABS >24:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+8 CODE ABS >25:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+C CODE ABS >26:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+10 CODE ABS >27:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+12 CODE ABS >29:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+14 CODE ABS >30:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+18 CODE ABS >32:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1A CODE ABS >33:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1C CODE ABS >34:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1E CODE ABS >35:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+20 CODE ABS >36:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+22 CODE ABS >37:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+24 CODE ABS >38:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+26 CODE ABS >39:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+28 CODE ABS >40:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2A CODE ABS >41:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2C CODE ABS >42:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2E CODE ABS >43:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+30 CODE ABS >44:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+32 CODE ABS >45:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+34 CODE ABS >46:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+36 CODE ABS >47:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+38 CODE ABS >48:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+3A CODE ABS >49:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+3E CODE ABS >50:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+42 CODE ABS >51:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+46 CODE ABS >52:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+4A CODE ABS >53:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+4E CODE ABS >54:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+50 CODE ABS >55:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+52 CODE ABS >56:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+54 CODE ABS >57:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+56 CODE ABS >58:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+58 CODE ABS >59:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+5A CODE ABS >60:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+5C CODE ABS >61:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+5E CODE ABS >62:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+60 CODE ABS >63:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+62 CODE ABS >64:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+64 CODE ABS >65:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+66 CODE ABS >66:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+68 CODE ABS >67:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+6A CODE ABS >68:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+6C CODE ABS >69:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+6E CODE ABS >70:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+70 CODE ABS >71:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+74 CODE ABS >72:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+78 CODE ABS >73:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+7C CODE ABS >74:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+80 CODE ABS >75:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+84 CODE ABS >76:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+86 CODE ABS >77:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+88 CODE ABS >78:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+8A CODE ABS >79:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+8C CODE ABS >80:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+8E CODE ABS >81:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+90 CODE ABS >82:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+92 CODE ABS >83:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+94 CODE ABS >84:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+96 CODE ABS >85:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+98 CODE ABS >86:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+9A CODE ABS >87:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+9C CODE ABS >88:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+9E CODE ABS >89:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+A0 CODE ABS >90:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+A2 CODE ABS >91:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+A4 CODE ABS >92:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+A6 CODE ABS >93:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+AA CODE ABS >94:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+AE CODE ABS >95:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+B2 CODE ABS >96:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+B6 CODE ABS >97:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+BA CODE ABS >98:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+BC CODE ABS >99:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+BE CODE ABS >100:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+C0 CODE ABS >101:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+C2 CODE ABS >102:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+C4 CODE ABS >103:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+C6 CODE ABS >104:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+C8 CODE ABS >105:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+CA CODE ABS >106:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+CC CODE ABS >107:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+CE CODE ABS >108:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+D0 CODE ABS >109:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+D2 CODE ABS >110:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+D4 CODE ABS >111:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+D6 CODE ABS >112:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+D8 CODE ABS >113:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+DA CODE ABS >114:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+DC CODE ABS >115:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+E0 CODE ABS >116:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+E4 CODE ABS >117:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+E8 CODE ABS >118:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+EC CODE ABS >119:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+F0 CODE ABS >120:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+F2 CODE ABS >121:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+F4 CODE ABS >122:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+F6 CODE ABS >123:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+F8 CODE ABS >124:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+FA CODE ABS >125:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+FC CODE ABS >126:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+FE CODE ABS >127:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+100 CODE ABS >128:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+102 CODE ABS >129:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+104 CODE ABS >130:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+106 CODE ABS >131:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+108 CODE ABS >132:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+10A CODE ABS >133:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+10C CODE ABS >134:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+10E CODE ABS >135:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+110 CODE ABS >136:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+112 CODE ABS >137:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+116 CODE ABS >138:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+11A CODE ABS >139:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+11E CODE ABS >140:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+122 CODE ABS >141:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+126 CODE ABS >142:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+128 CODE ABS >143:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+12A CODE ABS >144:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+12C CODE ABS >145:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+12E CODE ABS >146:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+130 CODE ABS >147:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+132 CODE ABS >148:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+134 CODE ABS >149:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+136 CODE ABS >150:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+138 CODE ABS >151:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+13A CODE ABS >152:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+13C CODE ABS >153:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+13E CODE ABS >154:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+140 CODE ABS >155:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+142 CODE ABS >156:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+144 CODE ABS >157:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+146 CODE ABS >158:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+148 CODE ABS >159:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+14C CODE ABS >160:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+150 CODE ABS >161:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+154 CODE ABS >162:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+158 CODE ABS >163:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+15C CODE ABS >164:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+15E CODE ABS >165:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+160 CODE ABS >166:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+162 CODE ABS >167:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+164 CODE ABS >168:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+166 CODE ABS >169:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+168 CODE ABS >170:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+16A CODE ABS >171:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+16C CODE ABS >172:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+16E CODE ABS >173:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+170 CODE ABS >174:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+172 CODE ABS >175:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+174 CODE ABS >176:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+176 CODE ABS >177:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+178 CODE ABS >178:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+17A CODE ABS >179:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+17C CODE ABS >180:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+17E CODE ABS >181:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+182 CODE ABS >182:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+186 CODE ABS >183:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+18A CODE ABS >184:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+18E CODE ABS >185:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+192 CODE ABS >186:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+194 CODE ABS >187:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+196 CODE ABS >188:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+198 CODE ABS >189:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+19A CODE ABS >190:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+19C CODE ABS >191:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+19E CODE ABS >192:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1A0 CODE ABS >193:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1A2 CODE ABS >194:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1A4 CODE ABS >195:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1A6 CODE ABS >196:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1A8 CODE ABS >197:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1AA CODE ABS >198:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1AC CODE ABS >199:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1AE CODE ABS >200:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1B0 CODE ABS >201:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1B2 CODE ABS >202:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1B4 CODE ABS >203:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1B8 CODE ABS >204:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1BC CODE ABS >205:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1C0 CODE ABS >206:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1C4 CODE ABS >207:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1C8 CODE ABS >208:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1CA CODE ABS >209:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1CC CODE ABS >210:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1CE CODE ABS >211:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1D0 CODE ABS >212:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1D2 CODE ABS >213:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1D4 CODE ABS >214:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1D6 CODE ABS >215:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1D8 CODE ABS >216:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1DA CODE ABS >217:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1DC CODE ABS >218:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1DE CODE ABS >219:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1E0 CODE ABS >220:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1E2 CODE ABS >221:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1E4 CODE ABS >222:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1E6 CODE ABS >223:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1E8 CODE ABS >224:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1EA CODE ABS >225:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1EE CODE ABS >226:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1F2 CODE ABS >227:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1F6 CODE ABS >228:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1FA CODE ABS >229:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1FE CODE ABS >230:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+200 CODE ABS >231:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+202 CODE ABS >232:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+204 CODE ABS >233:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+206 CODE ABS >234:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+208 CODE ABS >235:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+20A CODE ABS >236:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+20C CODE ABS >237:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+20E CODE ABS >238:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+210 CODE ABS >239:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+212 CODE ABS >240:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+214 CODE ABS >241:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+216 CODE ABS >242:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+218 CODE ABS >243:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+21A CODE ABS >244:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+21C CODE ABS >245:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+21E CODE ABS >246:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+220 CODE ABS >247:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+224 CODE ABS >248:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+228 CODE ABS >249:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+22C CODE ABS >250:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+230 CODE ABS >251:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+234 CODE ABS >252:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+238 CODE ABS >254:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+23A CODE ABS >255:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+23C CODE ABS >256:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+23E CODE ABS >257:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+240 CODE ABS >258:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+242 CODE ABS >259:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+244 CODE ABS >260:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+246 CODE ABS >261:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+248 CODE ABS >262:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+24A CODE ABS >263:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+24C CODE ABS >264:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+24E CODE ABS >265:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+250 CODE ABS >266:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+252 CODE ABS >267:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+254 CODE ABS >268:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+256 CODE ABS >269:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+258 CODE ABS >270:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+25A CODE ABS >271:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+25E CODE ABS >272:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+262 CODE ABS >273:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+266 CODE ABS >274:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+26A CODE ABS >275:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+26E CODE ABS >276:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+270 CODE ABS >277:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+272 CODE ABS >278:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+274 CODE ABS >279:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+276 CODE ABS >280:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+278 CODE ABS >281:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+27A CODE ABS >282:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+27C CODE ABS >283:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+27E CODE ABS >284:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+280 CODE ABS >285:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+282 CODE ABS >286:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+284 CODE ABS >287:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+286 CODE ABS >288:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+288 CODE ABS >289:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+28A CODE ABS >290:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+28C CODE ABS >291:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+28E CODE ABS >292:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+290 CODE ABS >293:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+294 CODE ABS >294:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+298 CODE ABS >295:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+29C CODE ABS >296:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2A0 CODE ABS >297:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2A4 CODE ABS >298:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2A6 CODE ABS >299:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2A8 CODE ABS >300:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2AA CODE ABS >301:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2AC CODE ABS >302:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2AE CODE ABS >303:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2B0 CODE ABS >304:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2B2 CODE ABS >305:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2B4 CODE ABS >306:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2B6 CODE ABS >307:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2B8 CODE ABS >308:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2BA CODE ABS >309:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2BC CODE ABS >310:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2BE CODE ABS >311:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2C0 CODE ABS >312:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2C2 CODE ABS >313:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2C4 CODE ABS >314:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2C6 CODE ABS >315:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2CA CODE ABS >316:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2CE CODE ABS >317:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2D2 CODE ABS >318:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2D6 CODE ABS >319:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2DA CODE ABS >320:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2DC CODE ABS >321:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2DE CODE ABS >322:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2E0 CODE ABS >323:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2E2 CODE ABS >324:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2E4 CODE ABS >325:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2E6 CODE ABS >326:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2E8 CODE ABS >327:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2EA CODE ABS >328:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2EC CODE ABS >329:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2EE CODE ABS >330:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2F0 CODE ABS >331:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2F2 CODE ABS >332:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2F4 CODE ABS >333:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2F6 CODE ABS >334:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2F8 CODE ABS >335:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2FA CODE ABS >336:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+2FC CODE ABS >337:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+300 CODE ABS >338:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+304 CODE ABS >339:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+308 CODE ABS >340:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+30C CODE ABS >341:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+310 CODE ABS >342:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+312 CODE ABS >343:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+314 CODE ABS >344:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+316 CODE ABS >345:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+318 CODE ABS >346:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+31A CODE ABS >347:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+31C CODE ABS >348:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+31E CODE ABS >349:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+320 CODE ABS >350:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+322 CODE ABS >351:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+324 CODE ABS >352:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+326 CODE ABS >353:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+328 CODE ABS >354:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+32A CODE ABS >355:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+32C CODE ABS >356:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+32E CODE ABS >357:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+330 CODE ABS >358:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+332 CODE ABS >359:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+336 CODE ABS >360:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+33A CODE ABS >361:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+33E CODE ABS >362:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+342 CODE ABS >363:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+346 CODE ABS >364:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+348 CODE ABS >365:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+34A CODE ABS >366:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+34C CODE ABS >367:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+34E CODE ABS >368:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+350 CODE ABS >369:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+352 CODE ABS >370:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+354 CODE ABS >371:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+356 CODE ABS >372:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+358 CODE ABS >373:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+35A CODE ABS >374:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+35C CODE ABS >375:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+35E CODE ABS >376:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+360 CODE ABS >377:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+362 CODE ABS >378:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+364 CODE ABS >379:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+366 CODE ABS >380:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+368 CODE ABS >381:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+36C CODE ABS >382:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+370 CODE ABS >383:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+374 CODE ABS >384:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+378 CODE ABS >385:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+37C CODE ABS >386:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+380 CODE ABS >389:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+382 CODE ABS >390:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+384 CODE ABS >391:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+386 CODE ABS >392:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+388 CODE ABS >393:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+38A CODE ABS >394:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+38C CODE ABS >395:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+38E CODE ABS >398:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+390 CODE ABS >399:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+392 CODE ABS >400:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+394 CODE ABS >401:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+396 CODE ABS >402:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+398 CODE ABS >403:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+39A CODE ABS >407:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+39C CODE ABS >408:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+39E CODE ABS >409:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+3A0 CODE ABS >410:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1FF7E resetVect CODE >18:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X\P2-Display_7SEG.s
+1FF82 code CODE >12:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FF84 code CODE >13:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FF86 code CODE >15:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FF88 code CODE >16:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FF8A code CODE >18:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FF8C code CODE >19:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FF8E code CODE >20:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FF92 code CODE >21:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FF94 code CODE >22:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FF98 code CODE >23:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FF9A code CODE >26:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FF9C code CODE >27:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FF9E code CODE >29:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFA0 code CODE >30:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFA2 code CODE >32:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFA4 code CODE >33:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFA6 code CODE >35:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFA8 code CODE >36:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFAA code CODE >37:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFAE code CODE >38:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFB0 code CODE >39:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFB4 code CODE >40:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFB6 code CODE >41:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFBA code CODE >42:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFBC code CODE >45:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFBE code CODE >46:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFC0 code CODE >48:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFC2 code CODE >49:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFC4 code CODE >51:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFC6 code CODE >52:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFC8 code CODE >53:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFCC code CODE >54:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFCE code CODE >55:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFD2 code CODE >56:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFD4 code CODE >60:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFD6 code CODE >61:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFD8 code CODE >63:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFDA code CODE >64:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFDC code CODE >66:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFDE code CODE >67:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFE0 code CODE >69:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFE2 code CODE >70:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFE4 code CODE >72:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFE6 code CODE >73:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFE8 code CODE >74:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFEC code CODE >75:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFEE code CODE >76:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFF2 code CODE >77:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFF4 code CODE >78:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFF8 code CODE >79:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFFA code CODE >80:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+1FFFE code CODE >81:E:\uC\uC1_2022_suarez_erickgregorio1\P2-Display_7SEG.X/led_inc.inc
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 20000 0 ABS 0 - -
+__Hspace_1 504 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 600023 0 ABS 0 - -
+__Hudata_bank5 3A2 0 ABS 0 udata_bank5 -
+__Hudata_bank6 3A2 0 ABS 0 udata_bank6 -
+__Hudata_bank7 3A2 0 ABS 0 udata_bank7 -
+__Hudata_bank8 3A2 0 ABS 0 udata_bank8 -
+__Hudata_bank9 3A2 0 ABS 0 udata_bank9 -
+__Hudata_bank10 3A2 0 ABS 0 udata_bank10 -
+__Hudata_bank11 3A2 0 ABS 0 udata_bank11 -
+__Hudata_bank12 3A2 0 ABS 0 udata_bank12 -
+__Hudata_bank13 3A2 0 ABS 0 udata_bank13 -
+__Hudata_bank14 3A2 0 ABS 0 udata_bank14 -
+__Hudata_bank15 3A2 0 ABS 0 udata_bank15 -
+__Hudata_bank16 3A2 0 ABS 0 udata_bank16 -
+__Hudata_bank17 3A2 0 ABS 0 udata_bank17 -
+__Hudata_bank18 3A2 0 ABS 0 udata_bank18 -
+__Hudata_bank19 3A2 0 ABS 0 udata_bank19 -
+__Hudata_bank20 3A2 0 ABS 0 udata_bank20 -
+__Hudata_bank21 3A2 0 ABS 0 udata_bank21 -
+__Hudata_bank22 3A2 0 ABS 0 udata_bank22 -
+__Hudata_bank23 3A2 0 ABS 0 udata_bank23 -
+__Hudata_bank24 3A2 0 ABS 0 udata_bank24 -
+__Hudata_bank25 3A2 0 ABS 0 udata_bank25 -
+__Hudata_bank26 3A2 0 ABS 0 udata_bank26 -
+__Hudata_bank27 3A2 0 ABS 0 udata_bank27 -
+__Hudata_bank28 3A2 0 ABS 0 udata_bank28 -
+__Hudata_bank29 3A2 0 ABS 0 udata_bank29 -
+__Hudata_bank30 3A2 0 ABS 0 udata_bank30 -
+__Hudata_bank31 3A2 0 ABS 0 udata_bank31 -
+__Hudata_bank32 3A2 0 ABS 0 udata_bank32 -
+__Hudata_bank33 3A2 0 ABS 0 udata_bank33 -
+__Hudata_bank34 3A2 0 ABS 0 udata_bank34 -
+__Hudata_bank35 3A2 0 ABS 0 udata_bank35 -
+__Hudata_bank36 3A2 0 ABS 0 udata_bank36 -
+__Hudata_bank37 3A2 0 ABS 0 udata_bank37 -
+__Hudata_bank38 3A2 0 ABS 0 udata_bank38 -
+__Hudata_bank39 3A2 0 ABS 0 udata_bank39 -
+__Hudata_bank40 3A2 0 ABS 0 udata_bank40 -
+__Hudata_bank41 3A2 0 ABS 0 udata_bank41 -
+__Hudata_bank42 3A2 0 ABS 0 udata_bank42 -
+__Hudata_bank43 3A2 0 ABS 0 udata_bank43 -
+__Hudata_bank44 3A2 0 ABS 0 udata_bank44 -
+__Hudata_bank45 3A2 0 ABS 0 udata_bank45 -
+__Hudata_bank46 3A2 0 ABS 0 udata_bank46 -
+__Hudata_bank47 3A2 0 ABS 0 udata_bank47 -
+__Hudata_bank48 3A2 0 ABS 0 udata_bank48 -
+__Hudata_bank49 3A2 0 ABS 0 udata_bank49 -
+__Hudata_bank50 3A2 0 ABS 0 udata_bank50 -
+__Hudata_bank51 3A2 0 ABS 0 udata_bank51 -
+__Hudata_bank52 3A2 0 ABS 0 udata_bank52 -
+__Hudata_bank53 3A2 0 ABS 0 udata_bank53 -
+__Hudata_bank54 3A2 0 ABS 0 udata_bank54 -
+isa$xinst 0 0 ABS 0 - build/default/production/P2-Display_7SEG.o
+__Hedata 3A2 0 ABS 0 edata -
+__Hudata 3A2 0 ABS 0 udata -
+__Hconfig 300023 0 CONFIG 4 config -
+__Ledata 3A2 0 ABS 0 edata -
+__Ludata 3A2 0 ABS 0 udata -
+__HCODE 3A2 0 ABS 0 CODE -
+__Hcode 3A2 0 ABS 0 code -
+__Hdata 3A2 0 ABS 0 data -
+__LCODE 0 0 ABS 0 CODE -
+__Lcode 3A2 0 ABS 0 code -
+__Ldata 3A2 0 ABS 0 data -
+__S0 20000 0 ABS 0 - -
+__S1 504 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Ludata_bank10 3A2 0 ABS 0 udata_bank10 -
+__Ludata_bank11 3A2 0 ABS 0 udata_bank11 -
+__Ludata_bank12 3A2 0 ABS 0 udata_bank12 -
+__Ludata_bank13 3A2 0 ABS 0 udata_bank13 -
+__Ludata_bank14 3A2 0 ABS 0 udata_bank14 -
+__Ludata_bank15 3A2 0 ABS 0 udata_bank15 -
+__Ludata_bank16 3A2 0 ABS 0 udata_bank16 -
+__Ludata_bank17 3A2 0 ABS 0 udata_bank17 -
+__Ludata_bank18 3A2 0 ABS 0 udata_bank18 -
+__Ludata_bank19 3A2 0 ABS 0 udata_bank19 -
+__Ludata_bank20 3A2 0 ABS 0 udata_bank20 -
+__Ludata_bank21 3A2 0 ABS 0 udata_bank21 -
+__Ludata_bank22 3A2 0 ABS 0 udata_bank22 -
+__Ludata_bank23 3A2 0 ABS 0 udata_bank23 -
+__Ludata_bank24 3A2 0 ABS 0 udata_bank24 -
+__Ludata_bank25 3A2 0 ABS 0 udata_bank25 -
+__Ludata_bank26 3A2 0 ABS 0 udata_bank26 -
+__Ludata_bank27 3A2 0 ABS 0 udata_bank27 -
+__Ludata_bank28 3A2 0 ABS 0 udata_bank28 -
+__Ludata_bank29 3A2 0 ABS 0 udata_bank29 -
+__Ludata_bank30 3A2 0 ABS 0 udata_bank30 -
+__Ludata_bank31 3A2 0 ABS 0 udata_bank31 -
+__Ludata_bank32 3A2 0 ABS 0 udata_bank32 -
+__Ludata_bank33 3A2 0 ABS 0 udata_bank33 -
+__Ludata_bank34 3A2 0 ABS 0 udata_bank34 -
+__Ludata_bank35 3A2 0 ABS 0 udata_bank35 -
+__Ludata_bank36 3A2 0 ABS 0 udata_bank36 -
+__Ludata_bank37 3A2 0 ABS 0 udata_bank37 -
+__Ludata_bank38 3A2 0 ABS 0 udata_bank38 -
+__Ludata_bank39 3A2 0 ABS 0 udata_bank39 -
+__Ludata_bank40 3A2 0 ABS 0 udata_bank40 -
+__Ludata_bank41 3A2 0 ABS 0 udata_bank41 -
+__Ludata_bank42 3A2 0 ABS 0 udata_bank42 -
+__Ludata_bank43 3A2 0 ABS 0 udata_bank43 -
+__Ludata_bank44 3A2 0 ABS 0 udata_bank44 -
+__Ludata_bank45 3A2 0 ABS 0 udata_bank45 -
+__Ludata_bank46 3A2 0 ABS 0 udata_bank46 -
+__Ludata_bank47 3A2 0 ABS 0 udata_bank47 -
+__Ludata_bank48 3A2 0 ABS 0 udata_bank48 -
+__Ludata_bank49 3A2 0 ABS 0 udata_bank49 -
+__Ludata_bank50 3A2 0 ABS 0 udata_bank50 -
+__Ludata_bank51 3A2 0 ABS 0 udata_bank51 -
+__Ludata_bank52 3A2 0 ABS 0 udata_bank52 -
+__Ludata_bank53 3A2 0 ABS 0 udata_bank53 -
+__Ludata_bank54 3A2 0 ABS 0 udata_bank54 -
+__Lconfig 0 0 CONFIG 4 config -
+isa$std 1 0 ABS 0 - build/default/production/P2-Display_7SEG.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__HresetVect 3A2 0 ABS 0 resetVect -
+__Ludata_bank5 3A2 0 ABS 0 udata_bank5 -
+__Ludata_bank6 3A2 0 ABS 0 udata_bank6 -
+__Ludata_bank7 3A2 0 ABS 0 udata_bank7 -
+__Ludata_bank8 3A2 0 ABS 0 udata_bank8 -
+__Ludata_bank9 3A2 0 ABS 0 udata_bank9 -
+__LresetVect 3A2 0 ABS 0 resetVect -
+__Hudata_acs 3A2 0 ABS 0 udata_acs -
+__Ludata_acs 3A2 0 ABS 0 udata_acs -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+code 0 1FF82 1FF82 7E 1
+resetVect 0 1FF7E 1FF7E 4 1
+udata_acs 1 500 500 4 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
